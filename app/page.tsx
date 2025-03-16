@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Pacifico } from "next/font/google"
-import Image from "next/image"
 import Logo from "@/components/Logo"
 import TeobankologySymbol from "@/components/TeobankologySymbol"
 import { cn } from "@/lib/utils"
