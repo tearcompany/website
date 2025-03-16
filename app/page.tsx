@@ -81,7 +81,13 @@ function ElegantShape({
   )
 }
 
-export default function HeroGeometric({
+export default function Page() {
+  return (
+    <HomePage />
+  )
+}
+
+function HomePage({
   badge = "Tear Company",
   title1 = "Share Your",
   title2 = "Emotions",

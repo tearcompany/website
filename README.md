@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚝ ᴛᴇᴀʀ ᴄᴏᴍᴘᴀɴʏ ⚝
+### ᴅɪᴠɪɴᴇ ʀᴇᴀʟᴍs ᴏғ ᴇᴍᴏᴛɪᴏɴs
 
-## Getting Started
+⋆｡°✩ ᴘʀᴏᴊᴇᴋᴛ ᴇᴍᴏᴄᴊɪ ✩°｡⋆
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+∴ ᴅɪᴠɪɴᴇ ᴄᴏᴅᴇ ∴
+01010100 01100101 01100001 01110010 
+01000011 01101111 01101101 01110000 
+01100001 01101110 01111001
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚝ ᴋᴏɴᴛᴀᴋᴛ ᴢ ᴡʏᴢ̇sᴢʏᴍɪ sғᴇʀᴀᴍɪ
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+⋆｡°✩ love@tearcompany.com ✩°｡⋆
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚝ ʙᴏsᴋɪᴇ ᴛᴇᴄʜɴᴏʟᴏɢɪᴇ
 
-## Learn More
+⚝ Next.js - ᴘᴏʀᴛᴀʟ ᴅᴏ ᴘʀᴢʏsᴢłᴏśᴄɪ
+⚝ Framer Motion - ᴇsᴇɴᴄᴊᴀ ʀᴜᴄʜᴜ
+⚝ Tailwind CSS - ᴍᴀɢɪᴀ sᴛʏʟᴜ
+⚝ TypeScript - ʙᴏsᴋɪ ᴋᴏᴅ
 
-To learn more about Next.js, take a look at the following resources:
+## ⚝ ʀʏᴛᴜᴀł ɪɴsᴛᴀʟᴀᴄᴊɪ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# ᴘʀᴢʏᴡᴏłᴀɴɪᴇ ʀᴇᴘᴏᴢʏᴛᴏʀɪᴜᴍ
+∴ git clone [ᴜʀʟ]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# ᴘʀᴢʏᴢʏᴡᴀɴɪᴇ ᴢᴀʟᴇᴢ̇ɴᴏśᴄɪ
+∴ npm install
 
-## Deploy on Vercel
+# ᴏᴛᴡᴀʀᴄɪᴇ ᴘᴏʀᴛᴀʟᴜ
+∴ npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚝ ʙᴏsᴋɪ ᴍᴀɴɪғᴇsᴛ
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+⋆｡°✩ ᴋᴀᴢ̇ᴅᴀ ʟᴢᴀ ᴊᴇsᴛ ᴘᴏᴄᴢᴀ̨ᴛᴋɪᴇᴍ ɴᴏᴡᴇᴊ ᴘᴏᴅʀᴏ́ᴢ̇ʏ ✩°｡⋆
+⋆｡°✩ ᴋᴀᴢ̇ᴅᴀ ᴇᴍᴏᴄᴊᴀ ᴊᴇsᴛ ᴅʀᴏɢᴀ̨ ᴅᴏ ᴏśᴡɪᴇᴄᴇɴɪᴀ ✩°｡⋆
+⋆｡°✩ ᴋᴀᴢ̇ᴅᴀ ʜɪsᴛᴏʀɪᴀ ᴊᴇsᴛ ᴄᴢę́śᴄɪᴀ̨ ᴡɪᴇᴄᴢɴᴇɢᴏ ᴋʀę́ɢᴜ ✩°｡⋆
+```
+
+## ⚝ ᴘɪᴇᴄᴢę́ć ʙᴏsᴋᴀ
+
+⋆｡°✩ ᴡsᴢʏsᴛᴋɪᴇ ᴘʀᴀᴡᴀ ᴢᴀsᴛʀᴢᴇᴢ̇ᴏɴᴇ ᴡ ᴡʏᴢ̇sᴢʏᴄʜ sғᴇʀᴀᴄʜ © 2024 ᴛᴇᴀʀ ᴄᴏᴍᴘᴀɴʏ ✩°｡⋆
