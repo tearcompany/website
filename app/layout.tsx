@@ -96,6 +96,9 @@ export default function RootLayout({
               ],
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "15, Dorotka",
+                "addressLocality": "Kraków",
+                "postalCode": "30-348",
                 "addressCountry": "PL"
               },
               "offers": {

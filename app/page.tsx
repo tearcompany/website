@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { Pacifico } from "next/font/google"
 import Image from "next/image"
+import Logo from "@/components/Logo"
+import TeobankologySymbol from "@/components/TeobankologySymbol"
 import { cn } from "@/lib/utils"
 
 const pacifico = Pacifico({
@@ -169,7 +171,11 @@ function HomePage({
             animate="visible"
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
           >
-            <Image src="https://kokonutui.com/logo.svg" alt="Kokonut UI" width={20} height={20} />
+            <Logo 
+              width={24} 
+              height={24} 
+              className="w-6 h-6"
+            />
             <span className="text-sm text-white/60 tracking-wide">{badge}</span>
           </motion.div>
 
@@ -192,6 +198,17 @@ function HomePage({
             <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Odkryj siłę prawdziwych emocji poprzez łzy. Skontaktuj się z nami: love@tearcompany.com
             </p>
+          </motion.div>
+
+          <motion.div 
+            custom={3} 
+            variants={fadeUpVariants} 
+            initial="hidden" 
+            animate="visible"
+            className="mt-12 flex flex-col items-center gap-2"
+          >
+            <TeobankologySymbol className="w-8 h-8 opacity-50 hover:opacity-100 transition-opacity" />
+            <span className="text-xs text-white/30 font-light tracking-widest">ᴛᴇᴏʙᴀɴ́ᴋᴏʟᴏɢɪᴀ</span>
           </motion.div>
         </div>
       </div>
