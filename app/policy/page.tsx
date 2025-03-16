@@ -1,7 +1,17 @@
+"use client"
+
 import React from 'react';
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { Pacifico } from "next/font/google";
 
-export default function PrivacyPolicy() {
+const pacifico = Pacifico({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-pacifico",
+});
+
+export default function Page() {
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -15,13 +25,16 @@ export default function PrivacyPolicy() {
   };
 
   return (
-    <div className="min-h-screen bg-[#030303] text-white/90 py-16 px-4">
+    <div className={cn("min-h-screen bg-[#030303] text-white/90 py-16 px-4", pacifico.variable)}>
       <div className="max-w-3xl mx-auto space-y-8">
         <motion.h1 
           initial="hidden"
           animate="visible"
           variants={fadeIn}
-          className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-300 via-white/90 to-purple-300 bg-clip-text text-transparent text-center"
+          className={cn(
+            "text-4xl font-bold mb-8 bg-gradient-to-r from-blue-300 via-white/90 to-purple-300 bg-clip-text text-transparent text-center",
+            pacifico.className
+          )}
         >
           ᴍᴀɴɪғᴇsᴛ ᴘʀʏᴡᴀᴛɴᴏśᴄɪ
         </motion.h1>
