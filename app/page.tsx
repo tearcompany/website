@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Pacifico, Inter } from "next/font/google"
+import { Pacifico } from "next/font/google"
 import Logo from "@/components/Logo"
 import { cn } from "@/lib/utils"
 
