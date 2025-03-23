@@ -1,15 +1,19 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Pacifico } from "next/font/google"
+import { Pacifico, Inter } from "next/font/google"
 import Logo from "@/components/Logo"
-import TeobankologySymbol from "@/components/TeobankologySymbol"
 import { cn } from "@/lib/utils"
 
 const pacifico = Pacifico({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-pacifico",
+})
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 })
 
 function ElegantShape({
@@ -90,8 +94,8 @@ export default function Page() {
 
 function HomePage({
   badge = "Tear Company",
-  title1 = "Share Your",
-  title2 = "Emotions",
+  title1 = "Digitalizing",
+  title2 = "Ideas",
 }: {
   badge?: string
   title1?: string
@@ -111,8 +115,8 @@ function HomePage({
   }
 
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/[0.05] via-transparent to-purple-500/[0.05] blur-3xl" />
+    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#0A0A0A] to-[#030303]">
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.08] via-transparent to-purple-500/[0.08] blur-3xl" />
 
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -121,15 +125,13 @@ function HomePage({
         className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4"
       >
         <a
-          href="https://donate.tearcompany.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] text-white/60 hover:text-white/90 hover:bg-white/[0.05] transition-all"
+          href="mailto:love@tearcompany.com"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/[0.05] border border-white/[0.1] text-white/80 hover:text-white hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="20"
+            height="20"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -137,29 +139,10 @@ function HomePage({
             strokeLinecap="round"
             strokeLinejoin="round"
           >
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
           </svg>
-          <span className="text-sm tracking-wide">Donate</span>
-        </a>
-        <a 
-          href="https://github.com/thetearcompany" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-white/30 hover:text-white/60 transition-colors"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-          </svg>
+          <span className="text-sm font-medium tracking-wide">Skontaktuj się z nami</span>
         </a>
       </motion.div>
 
@@ -169,7 +152,7 @@ function HomePage({
           width={600}
           height={140}
           rotate={12}
-          gradient="from-blue-500/[0.15]"
+          gradient="from-indigo-500/[0.15]"
           className="left-[-10%] md:left-[-5%] top-[15%] md:top-[20%]"
         />
 
@@ -196,7 +179,7 @@ function HomePage({
           width={200}
           height={60}
           rotate={20}
-          gradient="from-blue-400/[0.15]"
+          gradient="from-indigo-400/[0.15]"
           className="right-[15%] md:right-[20%] top-[10%] md:top-[15%]"
         />
 
@@ -211,29 +194,29 @@ function HomePage({
       </div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             custom={0}
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] mb-8 md:mb-12"
           >
-            <Logo 
-              width={24} 
-              height={24} 
+            <Logo
+              width={24}
+              height={24}
               className="w-6 h-6"
             />
-            <span className="text-sm text-white/60 tracking-wide">{badge}</span>
+            <span className="text-sm text-white/80 tracking-wide font-medium">{badge}</span>
           </motion.div>
 
           <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+            <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold mb-6 md:mb-8 tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">{title1}</span>
               <br />
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-white/90 to-purple-300 ",
+                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-purple-300",
                   pacifico.className,
                 )}
               >
@@ -243,32 +226,42 @@ function HomePage({
           </motion.div>
 
           <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <p className="text-base sm:text-lg md:text-xl text-white/40 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-              Odkryj siłę prawdziwych emocji poprzez łzy. Skontaktuj się z nami: love@tearcompany.com
+            <p className="text-lg sm:text-xl md:text-2xl text-white/60 mb-12 leading-relaxed font-light tracking-wide max-w-2xl mx-auto px-4">
+              Pomagamy w digitalizowaniu pomysłów dla ludzi dobrego serca.
+              <br />
+              <span className="text-white/40 text-base sm:text-lg md:text-xl">
+                Tworzymy cyfrowe rozwiązania, które mają znaczenie.
+              </span>
             </p>
           </motion.div>
 
-          <motion.div 
-            custom={3} 
-            variants={fadeUpVariants} 
-            initial="hidden" 
+          <motion.div
+            custom={3}
+            variants={fadeUpVariants}
+            initial="hidden"
             animate="visible"
-            className="mt-12 flex flex-col items-center gap-2"
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
           >
-            <a 
-              href="https://teobankologia.pl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-white/30 font-light tracking-widest hover:text-white/50 transition-colors flex items-center gap-2 flex-col"
-            >
-              <TeobankologySymbol className="w-8 h-8 opacity-50 hover:opacity-100 transition-opacity" />
-              ᴛᴇᴏʙᴀɴ́ᴋᴏʟᴏɢɪᴀ
-            </a>
+            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
+              <div className="text-2xl mb-4">💡</div>
+              <h3 className="text-lg font-medium text-white/80 mb-2">Pomysły</h3>
+              <p className="text-sm text-white/40">Pomagamy przekształcić Twoje pomysły w rzeczywistość cyfrową</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
+              <div className="text-2xl mb-4">❤️</div>
+              <h3 className="text-lg font-medium text-white/80 mb-2">Wartości</h3>
+              <p className="text-sm text-white/40">Tworzymy rozwiązania z myślą o dobru wspólnym</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
+              <div className="text-2xl mb-4">🚀</div>
+              <h3 className="text-lg font-medium text-white/80 mb-2">Rozwój</h3>
+              <p className="text-sm text-white/40">Wspieramy rozwój projektów z potencjałem</p>
+            </div>
           </motion.div>
         </div>
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#030303] via-transparent to-[#030303]/80 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]/80 pointer-events-none" />
     </div>
   )
 }
