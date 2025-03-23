@@ -11,11 +11,6 @@ const pacifico = Pacifico({
   variable: "--font-pacifico",
 })
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-})
-
 function ElegantShape({
   className,
   delay = 0,
@@ -123,11 +118,11 @@ export default function Page() {
 function HomePage({
   badge = "Tear Company",
   title1 = "Ideas",
-  title2 = "Digitalized",
+  // title2 = "Digitalized",
 }: {
   badge?: string
   title1?: string
-  title2?: string
+  // title2?: string
 }) {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
