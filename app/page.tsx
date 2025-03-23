@@ -86,6 +86,34 @@ function ElegantShape({
   )
 }
 
+function ContactButton() {
+  return (
+    <div className="relative group">
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-gradient-xy"></div>
+      <a
+        href="mailto:love@tearcompany.com"
+        className="relative px-8 py-4 bg-black rounded-full leading-none flex items-center gap-2 text-white/80 hover:text-white transition-colors duration-200"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+        <span className="text-lg font-medium tracking-wide">Skontaktuj się z nami</span>
+      </a>
+    </div>
+  )
+}
+
 export default function Page() {
   return (
     <HomePage />
@@ -94,8 +122,8 @@ export default function Page() {
 
 function HomePage({
   badge = "Tear Company",
-  title1 = "Digitalizing",
-  title2 = "Ideas",
+  title1 = "Ideas",
+  title2 = "Digitalized",
 }: {
   badge?: string
   title1?: string
@@ -124,26 +152,11 @@ function HomePage({
         transition={{ delay: 0.5 }}
         className="absolute top-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4"
       >
-        <a
-          href="mailto:love@tearcompany.com"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/[0.05] border border-white/[0.1] text-white/80 hover:text-white hover:bg-white/[0.08] transition-all duration-300 hover:scale-105"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-          <span className="text-sm font-medium tracking-wide">Skontaktuj się z nami</span>
-        </a>
+        <Logo
+          width={24}
+          height={24}
+          className="w-6 h-6"
+        />
       </motion.div>
 
       <div className="absolute inset-0 overflow-hidden">
@@ -200,7 +213,7 @@ function HomePage({
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] mb-8 md:mb-12"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.05] border border-white/[0.1] mb-12 md:mb-16"
           >
             <Logo
               width={24}
@@ -211,17 +224,18 @@ function HomePage({
           </motion.div>
 
           <motion.div custom={1} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold mb-6 md:mb-8 tracking-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">{title1}</span>
-              <br />
+            <h1 className="text-6xl sm:text-8xl md:text-[10rem] font-bold leading-none tracking-tight">
               <span
                 className={cn(
-                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-purple-300",
+                  "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-purple-300 block",
                   pacifico.className,
                 )}
               >
-                {title2}
+                {title1}
               </span>
+              {/* <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80 text-4xl sm:text-5xl md:text-7xl block mt-1">
+                {title2}
+              </span> */}
             </h1>
           </motion.div>
 
@@ -240,23 +254,9 @@ function HomePage({
             variants={fadeUpVariants}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto"
+            className="flex justify-center"
           >
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
-              <div className="text-2xl mb-4">💡</div>
-              <h3 className="text-lg font-medium text-white/80 mb-2">Pomysły</h3>
-              <p className="text-sm text-white/40">Pomagamy przekształcić Twoje pomysły w rzeczywistość cyfrową</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
-              <div className="text-2xl mb-4">❤️</div>
-              <h3 className="text-lg font-medium text-white/80 mb-2">Wartości</h3>
-              <p className="text-sm text-white/40">Tworzymy rozwiązania z myślą o dobru wspólnym</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.05] transition-all duration-300">
-              <div className="text-2xl mb-4">🚀</div>
-              <h3 className="text-lg font-medium text-white/80 mb-2">Rozwój</h3>
-              <p className="text-sm text-white/40">Wspieramy rozwój projektów z potencjałem</p>
-            </div>
+            <ContactButton />
           </motion.div>
         </div>
       </div>
